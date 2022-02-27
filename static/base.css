@@ -1,3 +1,10 @@
 .html {
     font-family: 'Nanum Gothic', sans-serif;
 }
+
+.header{
+    margin-top: 2rem; margin-left:1rem;
+}
+.home_nav {
+    font-size:1rem; text-align:right; margin-right:1rem;
+}
