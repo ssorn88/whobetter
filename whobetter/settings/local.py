@@ -1,5 +1,10 @@
 from .base import *
 
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
+
 # reading .env file
 environ.Env.read_env(
     env_file=os.path.join(BASE_DIR, '.env')
