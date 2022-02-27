@@ -9,7 +9,7 @@ class Promise(models.Model):
     party = models.CharField(max_length=20, null=True)
     keyword = models.CharField(max_length=20, null=True)
 
-    corona = models.ForeignKey
+    corona = models.ForeignKey()
     realty = models.ForeignKey
     military = models.ForeignKey
     politics = models.ForeignKey
