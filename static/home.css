@@ -72,10 +72,9 @@ button {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 200px;
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
     border: 1px solid var(--point-color);
     transition: all 0.5s;
     border-radius: 5rem;
