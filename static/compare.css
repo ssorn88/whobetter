@@ -68,4 +68,9 @@ html {
     color:var(--bg-color);
 }
 
+.trend-container {
+    width: 60%;
+    margin: auto 1rem;
+}
+
 

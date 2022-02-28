@@ -1,3 +1,11 @@
+:root {
+  --text-color: #4E4E4E;
+  --bg-color: #F5F5F5;
+  --point-color: #CDE82D;
+  --light-color: #C0C0C0;
+  --dark-color: #7A7A7A;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +14,7 @@
 }
 
 .candi-container {
-    border: 1px solid gray;
+    border: 1px solid var(--dark-color);
     border-radius: 2rem;
     width: 40%;
     height: 20%;
@@ -29,12 +37,12 @@
 .image {
     width: 100px;
     height: 130px;
-    background-color: blanchedalmond;
+    background-color: var(--light-color);
 }
 
 .dismiss {
     border: none;
-    background-color: #fff;
+    background-color: var(--bg-color);
     height: 1.5rem;
     width: 1.5rem;
 }
