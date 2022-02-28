@@ -15,7 +15,7 @@ html {
 }
 
 .select_election{
-    margin:2rem 3rem;
+    margin:1.5rem 2.5rem;
 }
 
 .congress_button {
@@ -66,6 +66,10 @@ html {
     color:var(--bg-color);
 }
 
+.promise_select:hover {
+    background: var(--point-color);
+    color: var(--text-color);
+}
 .trend-container {
     width: 60%;
     margin: 2rem auto;
@@ -73,6 +77,7 @@ html {
 
 .compare_container {
     display: flex;
+    margin-top: 0.5rem;
 }
 
 .candi-two-container {
@@ -119,5 +124,10 @@ html {
   margin-top: 5px;
   right: 100%;
   border-color: transparent var(--text-color) transparent transparent ;
+}
 
+.category-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
 }

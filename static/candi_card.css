@@ -27,15 +27,20 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
+    margin-bottom: 1rem;
 }
 
 .candi-info .info {
     padding-left: 1rem;
 }
 
+.candi-info p {
+    margin-top: 1rem;
+}
+
 .image {
-    width: 100px;
-    height: 130px;
+    width: 90px;
+    height: 110px;
     background-color: var(--light-color);
 }
 

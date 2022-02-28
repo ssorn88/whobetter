@@ -37,3 +37,14 @@ hr {
     color: var(--light-color);
     vertical-align: middle;
 }
+
+select {
+    background: var(--bg-color);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--dark-color);
+}
+
+option {
+    background: var(--bg-color);
+}
