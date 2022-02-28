@@ -3,11 +3,9 @@
 
 
 {% block content %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'compare.css' %}">
     <div class="select_election">
-        <span style="margin-right:2rem;">
-            선거 선택
+        <span class="select_title">
+            <b>선거 선택</b>
         </span>
         <button type="button" class="congress_button">
             제21대 국회의원선거
@@ -15,24 +13,25 @@
         <button type="button" class="president_button">
             제20대 대통령선거
         </button>
-        <button type="button" class="plus_button">
+        <button type="button" class="plus_button tooltip">
             <span class="material-icons gray"> add_circle </span>
+            <span class="tooltiptext tooltip-top">이전 선거 확인하기</span>
         </button>
-        <br><br>
-        <span style="margin-top:2rem;" >
-            <a style="margin-right:1rem;">
-            비교 후보자 선택
-            </a>
+    </div>
+
+    <div class="select_election">
+        <span class="select_title">
+            <b>비교 후보자 선택</b>
+        </span>
+        <span class="selectbox-container">
             <select class="candidate_combo" name="candidate">
-                <option value="none">
-                    --------
-                </option>
+                <option value="none">-------</option>
+                <option value="none">-------</option>
+                <option value="none">-------</option>
             </select>
-            <button type="button" class="plus_button">
-                <span class="material-icons gray"> add_circle </span>
-            </button>
         </span>
     </div>
+
     <div class="compare_container">
         <div>
             <div class="candi-two-container">

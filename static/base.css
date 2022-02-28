@@ -35,4 +35,5 @@ hr {
 
 .gray {
     color: var(--light-color);
+    vertical-align: middle;
 }
