@@ -48,6 +48,12 @@
     color: var(--bg-color);
     margin: auto 1rem;
     text-align: center;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+
 }
 
 
@@ -66,10 +72,9 @@ button {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 200px;
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
     border: 1px solid var(--point-color);
     transition: all 0.5s;
     border-radius: 5rem;

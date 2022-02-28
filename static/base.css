@@ -24,5 +24,9 @@ a:hover {
 }
 
 hr {
+    color: var(--light-color);
+    border-color: var(--light-color);
     background-color: var(--light-color);
+    border-width: 1px 0px 0px 0px;
+    margin: auto 0.5rem;
 }
