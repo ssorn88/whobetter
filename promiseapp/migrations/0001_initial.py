@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=10, unique=True)),
                 ('election', models.CharField(max_length=10, null=True)),
                 ('party', models.CharField(max_length=20, null=True)),
+                ('slogan', models.CharField(max_length=20, null=True)),
                 ('keyword', models.TextField(null=True)),
             ],
         ),
