@@ -1,3 +1,5 @@
+*{margin: 0; padding: 0;}
+
 :root {
   --text-color: #4E4E4E;
   --bg-color: #F5F5F5;
@@ -8,11 +10,6 @@
 
 html {
     font-family: 'Nanum Gothic', sans-serif;
-<<<<<<< HEAD
-}
-
-
-=======
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -24,5 +21,8 @@ a {
 
 a:hover {
     text-decoration: none;
->>>>>>> 7cd49313f20a1df49a7827da76080698eea69ada
+}
+
+hr {
+    background-color: var(--light-color);
 }
