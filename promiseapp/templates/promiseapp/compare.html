@@ -6,25 +6,69 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'compare.css' %}">
     <div class="select_election">
-        <span>
+        <span style="margin-right:2rem;">
             선거 선택
         </span>
-        <button type="button" class="election_button">
+        <button type="button" class="congress_button">
             제21대 국회의원선거
         </button>
-        <button type="button">
+        <button type="button" class="president_button">
             제20대 대통령선거
         </button>
+        <button type="button" class="plus_button">
+            +
+        </button>
         <br><br>
-        <a>
+        <span style="margin-top:2rem;" >
+            <a style="margin-right:1rem;">
             비교 후보자 선택
-        </a>
-        <a>
-
-        </a>
+            </a>
+            <select class="candidate_combo" name="candidate">
+                <option value="none">
+                    --------
+                </option>
+            </select>
+            <button type="button" class="plus_button">
+                +
+            </button>
+        </span>
     </div>
 
     <div>
+        <button type="button" class="promise_select">
+            코로나
+        </button>
+        <button type="button" class="promise_select">
+            부동산
+        </button>
+        <button type="button" class="promise_select">
+            국방/통일/외교통상
+        </button>
+        <button type="button" class="promise_select">
+            정치/행정/사법
+        </button>
+        <button type="button" class="promise_select">
+            재정/경제/복지
+        </button>
+        </button>
+        <button type="button" class="promise_select">
+            산업자원/건설교통
+        </button>
+        </button>
+        <button type="button" class="promise_select">
+            보건의료/환경
+        </button>
+        </button>
+        <button type="button" class="promise_select">
+            과학기술/정보통신
+        </button>
+        </button>
+        <button type="button" class="promise_select">
+            문화/언론/관광/스포츠
+        </button>
+        <button type="button" class="promise_select">
+            교육/인적자원
+        </button>
 
     </div>
 
