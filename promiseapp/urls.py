@@ -6,5 +6,4 @@ app_name = "promiseapp"
 
 urlpatterns = [
     path('compare/', compare, name='compare')
-
 ]

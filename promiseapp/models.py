@@ -10,6 +10,7 @@ class Candidate(models.Model):
     name = models.CharField(max_length=10, unique=True, null=False)
     election = models.CharField(max_length=10, null=True)
     party = models.CharField(max_length=20, null=True)
+    slogan = models.CharField(max_length=20, null=True)
     keyword = models.TextField(null=True)
 
     def __str__(self):

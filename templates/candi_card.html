@@ -1,0 +1,52 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'candi_card.css' %}">
+
+<div class="container">
+    <div class="candi-container">
+        <div class="candi-info">
+            <div>
+                <img class="image" src="">
+            </div>
+            <div>
+                <div class="info">
+                    <span class="candi-name"><b>이름이름</b></span><br>
+                    <span class="candi-party">정당정당</span>
+                    <p>공약 슬로건 해시택 노엘을 국회로 해시택 노엘을 국회로 ~~</p>
+                </div>
+            </div>
+            <button class="dismiss" onclick="">X</button>
+        </div>
+        <div class="keywords">
+            <ul>
+                <a><li>공약1어쩌고저쩌고</li></a>
+                <a><li>공약2어쩌고저쩌고</li></a>
+                <a><li>공약3어쩌고저쩌고</li></a>
+                <a><li>공약4어쩌고저쩌고</li></a>
+                <a><li>공약5어쩌고저쩌고</li></a>
+                <a><li>공약1어쩌고저쩌고</li></a>
+                <a><li>공약2어쩌고저쩌고</li></a>
+                <a><li>공약3어쩌고저쩌고</li></a>
+                <a><li>공약4어쩌고저쩌고</li></a>
+                <a><li>공약5어쩌고저쩌고</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Google Trends -->
+    <div class="trend-container">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
+        <script type="text/javascript">
+            trends.embed.renderExploreWidget("TIMESERIES",
+            {"comparisonItem":[
+                {"keyword":"이재명","geo":"KR","time":"today 12-m"},
+                {"keyword":"심상정","geo":"KR","time":"today 12-m"},
+                {"keyword":"윤석열","geo":"KR","time":"today 12-m"},
+            ], "category":0, "property":""},
+            {"exploreQuery":"geo=KR&q=%EC%9D%B4%EC%9E%AC%EB%AA%85,%EC%8B%AC%EC%83%81%EC%A0%95&date=today 12-m,today 12-m",
+            "guestPath":"https://trends.google.co.kr:443/trends/embed/"}
+            );
+        </script>
+    </div>
+</div>
