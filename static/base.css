@@ -32,3 +32,7 @@ hr {
     border-width: 1px 0px 0px 0px;
     margin: auto 0.5rem;
 }
+
+.gray {
+    color: var(--light-color);
+}
