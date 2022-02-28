@@ -24,5 +24,6 @@ a:hover {
 }
 
 hr {
-    background-color: var(--light-color);
+    background-color: var(--dark-color);
+    border: 0px;
 }
