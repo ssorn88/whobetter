@@ -70,7 +70,15 @@ html {
 
 .trend-container {
     width: 60%;
-    margin: auto 1rem;
+    margin: 2rem auto;
 }
 
+.compare_container {
+    display: flex;
+}
+
+.candi-two-container {
+    display: flex;
+    flex-direction: column;
+}
 

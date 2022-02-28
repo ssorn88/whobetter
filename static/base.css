@@ -13,6 +13,7 @@ html {
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-wrap: normal;
+    padding: 1rem;
 }
 
 a {
