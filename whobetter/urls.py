@@ -19,6 +19,6 @@ from promiseapp.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('promises/', include('promiseapp.urls')),
+    path('promise/', include('promiseapp.urls')),
     path('', home, name='home'),
 ]
