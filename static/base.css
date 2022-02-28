@@ -12,6 +12,7 @@ html {
     font-family: 'Nanum Gothic', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    overflow-wrap: normal;
 }
 
 a {

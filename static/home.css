@@ -12,6 +12,7 @@
     height: 12rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .white-container {
@@ -22,32 +23,35 @@
 .container1 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: left;
+    width: 40%;
 }
 
 .container1 .box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .ment-1 {
     color: var(--bg-color);
-    margin-left: 5rem;
+    margin-left: 3rem;
+    width: 100%;
 }
 
 .ment-2 {
     color: var(--point-color);
     font-size: 1.2rem;
-    margin-left: 5rem;
-    margin: auto 5rem;
+    margin: auto 0.5rem;
 }
 
 .ment-3 {
     color: var(--bg-color);
     margin: auto 1rem;
     text-align: center;
+    max-width: 60%;
     transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
