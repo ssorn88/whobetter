@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('promise/', include('promiseapp.urls')),
     path('', home, name='home'),
+    path('notice/', include('noticeapp.urls')),
 ]

@@ -24,7 +24,7 @@
             <b>후보자 선택</b>
         </span>
         <span class="selectbox-container">
-            <select class="candidate_combo" name="candidate" onchange="initTrendChart(this.value)">
+            <select class="candidate_combo" name="candidate" onchange="selectCandidate(this.value)">
                 <option value="default">검색 빈도 비교할 후보 선택</option>
                 {% for candidate in candidate_list %}
                     <h4>
@@ -89,4 +89,15 @@
                     </div>
             {% endfor %}
     </div>
+
+    <!-- data -->
+    <script>
+        var candidate_json = '{{ candidate_json }}';
+        var departcon_json = '{{ departcon_json }}';
+        var depart_json = '{{ depart_json }}';
+        var names = [];
+    </script>
+    <!---google trends--->
+    <script src="/static/js/trend.js"></script>
+    <script src="/static/js/compare.js"></script>
 {% endblock %}

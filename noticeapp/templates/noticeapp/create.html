@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <div>
+        <h4>Notice Create</h4>
+
+        <form action="{% url 'noticeapp:create' %}" method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <input type="submit" style="btn btn-dark rounded-pill col-6 mt-3">
+        </form>
+    </div>
+
+{% endblock %}
