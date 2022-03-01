@@ -1,8 +1,9 @@
+{% load static %}
 <div class="container" id="{{ candidate.candi_con.candi_dep.pk }}">
     <div class="candi-container">
         <div class="candi-info">
             <div>
-                <img class="image" src="">
+                <img src="{{ candidate.candi_con.candi_dep.image.url }}" alt="">
             </div>
             <div>
                 <div class="info">
@@ -15,7 +16,7 @@
         </div>
         <div class="keywords">
             <ul>
-                {{ candidate.candi_con.candi_dep.keyword }}
+                {{ candidate.candi_con.candi_dep.keyword | linebreaksbr }}
             </ul>
         </div>
     </div>
