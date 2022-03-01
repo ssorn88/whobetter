@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo wb6
+RUN echo wb7
 
 RUN git clone https://github.com/ssorn88/whobetter.git
 
