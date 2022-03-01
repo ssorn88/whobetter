@@ -9,11 +9,10 @@
     border: 1px solid var(--light-color);
     border-radius: 2rem;
     height: 20%;
-    flex-wrap: wrap;
+    width: 50rem;
     min-width: 30rem;
-    max-width: 60rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
 }
