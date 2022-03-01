@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 0.5rem auto;
 }
 
@@ -125,22 +126,24 @@
 
 .category-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1.5rem;
+
 }
 
 .category-container2 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 1rem;
-    justify-content:flex-start;
+    justify-content: center;
+    max-width: 80%;
 }
 
 .promise_selected {
     background: var(--point-color);
     text-align:center;
     float: none;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     margin: 1rem auto;
     width: 150px;
     border-radius: 1rem;
