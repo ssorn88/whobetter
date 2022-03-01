@@ -28,17 +28,11 @@
                 <option value="default">검색 빈도 비교할 후보 선택</option>
                 {% for candidate in candidate_list %}
                     <h4>
-                       <option value="{{ candidate.candi_con.candi_dep.name }}">{{ candidate.candi_con.candi_dep.name }}</option>
+                       <option value="{{ candidate.candi_con.candi_dep.name }}|{{ candidate.candi_con.candi_dep.pk }}">{{ candidate.candi_con.candi_dep.name }}</option>
                     </h4>
                 {% endfor %}
             </select>
         </span>
-    </div>
-
-
-    <!-- Google Trends -->
-    <div class="trend-container" id="trend">
-        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
     </div>
 
     <hr class="gray">
@@ -90,11 +84,19 @@
             {% endfor %}
     </div>
 
+
+
+    <!-- Google Trends -->
+    <div class="trend-container" id="trend">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
+    </div>
+
+
     <!-- data -->
     <script>
-        var candidate_json = '{{ candidate_json }}';
-        var departcon_json = '{{ departcon_json }}';
-        var depart_json = '{{ depart_json }}';
+        var candidate_json = JSON.stringify('{{ candidate_json }}');
+        var departcon_json = JSON.stringify('{{ departcon_json }}');
+        var depart_json = JSON.stringify('{{ depart_json }}');
         var names = [];
     </script>
 

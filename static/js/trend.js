@@ -1,4 +1,4 @@
-function initTrendChart(name) {
+function initTrendChart() {
     var comparisonItem = [];
     var exploreQuery = "date=today%201-m&geo=KR&q=";
 
@@ -18,7 +18,6 @@ function initTrendChart(name) {
 
     }
 
-    console.log(exploreQuery);
     document.getElementById("trend").innerHTML = "";
     trends.embed.renderExploreWidgetTo(document.getElementById("trend"), "TIMESERIES", {"comparisonItem":comparisonItem, "category":0,"property":""},{"exploreQuery":exploreQuery,"guestPath":"https://trends.google.co.kr:443/trends/embed/"});
 }

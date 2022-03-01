@@ -1,8 +1,8 @@
 .container {
-    display: inline-flex;
     max-width : 100%;
     flex-wrap: wrap;
     padding: 1rem;
+    display: none;
 }
 
 .candi-container {
