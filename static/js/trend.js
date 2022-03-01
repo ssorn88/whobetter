@@ -1,4 +1,10 @@
 function initTrendChart() {
+
+    if ( names.length == 0 ) {
+        document.getElementById("trend").style.display = 'none';
+        return;
+    }
+
     var comparisonItem = [];
     var exploreQuery = "date=today%201-m&geo=KR&q=";
 
