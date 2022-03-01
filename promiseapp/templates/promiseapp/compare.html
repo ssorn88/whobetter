@@ -27,7 +27,7 @@
             <select class="candidate_combo" name="candidate">
                 {% for candidate in candidate_list %}
                     <h4>
-                       <option value="selected_candidate">{{ candidate.candi_con.candi_dep.name }}</option>
+                       <option value="candidate">{{ candidate.candi_con.candi_dep.name }}</option>
                     </h4>
                 {% endfor %}
             </select>
