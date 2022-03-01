@@ -19,8 +19,6 @@ RUN pip install gunicorn
 
 RUN pip install mysqlclient
 
-RUN echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'es4402@korea.ac.kr', 'admin')" | python manage.py shell
-
 
 EXPOSE 8000
 
