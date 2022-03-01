@@ -36,16 +36,11 @@
 
     <hr class="gray">
 
-    <div class="compare_container">
-        <div>
-            {% for candidate in candidate_list %}
-                <div class="candi-two-container">
-                    {% include 'candi_card.html' with candidate=candidate %}
-                </div>
-            {% endfor %}
-        </div>
-
-        <div class="category-container">
+    <div class="category-container">
+        <button type="button" class="promise_selected">
+            주요 공약
+        </button>
+        <div class="category-container2">
             <button type="button" class="promise_select">
                 코로나
             </button>
@@ -53,7 +48,7 @@
                 부동산
             </button>
             <button type="button" class="promise_select">
-                국방/통일/외교통상
+            국방/통일/외교통상
             </button>
             <button type="button" class="promise_select">
                 정치/행정/사법
@@ -61,11 +56,6 @@
             <button type="button" class="promise_select">
                 재정/경제/복지
             </button>
-
-            <button type="button" class="promise_selected">
-                주요 공약
-            </button>
-
             <button type="button" class="promise_select">
                 산업자원/건설교통
             </button>
@@ -81,17 +71,16 @@
             <button type="button" class="promise_select">
                 교육/인적자원
             </button>
-        </div>
 
-        <div>
-            <div class="candi-two-container">
-                {% include 'candi_card.html' %}
-            </div>
-            <div class="candi-two-container">
-                {% include 'candi_card.html' %}
-            </div>
         </div>
+    </div>
 
+    <div class="compare_container">
+            {% for candidate in candidate_list %}
+                    <div>
+                        {% include 'candi_card.html' with candidate=candidate %}
+                    </div>
+            {% endfor %}
     </div>
 
     <!-- Google Trends -->
@@ -99,4 +88,8 @@
         <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js" onload="initTrendChart()"></script>
     </div>
 
+    <script>
+
+
+    </script>
 {% endblock %}

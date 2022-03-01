@@ -54,28 +54,17 @@
     display:block;
     text-align:center;
     float: none;
-    margin: 1rem auto;
-    vertical-align: middle;
-    width: 200px;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
     height: 30px;
     border-radius: 5rem;
-    font-size: 1rem;
     background: var(--light-color);
     color:var(--bg-color);
     transition: all ease 1s 0s;
 }
 
 .promise_select:hover {
-    height: 100px;
     background: var(--point-color);
-    text-align:center;
-    float: none;
-    margin: 1rem auto;
-    vertical-align: middle;
-    width: 200px;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
     color:var(--text-color);
     transition: all ease 1s 0s;
 }
@@ -87,12 +76,8 @@
 
 .compare_container {
     display: flex;
+    flex-direction: row;
     margin-top: 0.5rem;
-}
-
-.candi-two-container {
-    display: flex;
-    flex-direction: column;
 }
 
 .select_title {
@@ -139,19 +124,24 @@
 
 .category-container {
     display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.category-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    justify-content:flex-start;
 }
 
 .promise_selected {
-    height: 100px;
     background: var(--point-color);
     text-align:center;
     float: none;
+    padding: 0 1.5rem;
     margin: 1rem auto;
-    vertical-align: middle;
-    width: 200px;
+    width: 150px;
     border-radius: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
