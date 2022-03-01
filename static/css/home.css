@@ -1,0 +1,100 @@
+.black-container {
+    background: var(--dark-color);
+    padding: 1rem;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.white-container {
+    text-align: center;
+    padding: 4rem;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 40%;
+}
+
+.container1 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.ment-1 {
+    color: var(--bg-color);
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.ment-2 {
+    color: var(--point-color);
+    font-size: 1.2rem;
+    margin: auto 0.5rem;
+}
+
+.ment-3 {
+    color: var(--bg-color);
+    margin: auto 1rem;
+    text-align: center;
+    max-width: 60%;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+
+}
+
+
+button {
+    background: 0 none; border: 0 none;
+    color: var(--text-color);
+}
+
+.buttons {
+    position: relative;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.buttons button {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    height: 80px;
+    border: 1px solid var(--point-color);
+    transition: all 0.5s;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+}
+
+.buttons button:hover {
+    color: var(--text-color);
+}
+.buttons button:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: var(--point-color);
+    transition: all 1s;
+}
+
+.buttons.buttons2 .button7:before {
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    width: 200%;
+    height: 0;
+}
+
+.buttons.buttons2 .button7:hover:before {
+    height: 300%;
+}

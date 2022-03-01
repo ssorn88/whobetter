@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="select_election">
+        <span class="select_title">
+            <b>선거 선택</b>
+        </span>
+        <button type="button" class="congress_button">
+            제21대 국회의원선거
+        </button>
+        <button type="button" class="president_button">
+            제20대 대통령선거
+        </button>
+        <button type="button" class="plus_button tooltip">
+            <span class="material-icons gray"> add_circle </span>
+            <span class="tooltiptext tooltip-top">이전 선거 확인하기</span>
+        </button>
+    </div>
+
+    <div class="select_election">
+        <span class="select_title">
+            <b>후보자 선택</b>
+        </span>
+        <span class="selectbox-container">
+            <select class="candidate_combo" name="candidate" onchange="selectCandidate(this.value)">
+                <option value="default">검색 빈도 비교할 후보 선택</option>
+                {% for candidate in candidate_list %}
+                    <h4>
+                       <option value="{{ candidate.candi_con.candi_dep.name }}|{{ candidate.candi_con.candi_dep.pk }}">{{ candidate.candi_con.candi_dep.name }}</option>
+                    </h4>
+                {% endfor %}
+            </select>
+        </span>
+    </div>
+
+    <hr class="gray">
+
+    <div style="margin: 0 auto;">
+        <div class="category-container">
+            <button type="button" class="promise_selected">
+                주요 공약
+            </button>
+            <div class="category-container2">
+                <button type="button" class="promise_select">
+                    코로나
+                </button>
+                <button type="button" class="promise_select">
+                    부동산
+                </button>
+                <button type="button" class="promise_select">
+                국방/통일/외교통상
+                </button>
+                <button type="button" class="promise_select">
+                    정치/행정/사법
+                </button>
+                <button type="button" class="promise_select">
+                    재정/경제/복지
+                </button>
+                <button type="button" class="promise_select">
+                    산업자원/건설교통
+                </button>
+                <button type="button" class="promise_select">
+                    보건의료/환경
+                </button>
+                <button type="button" class="promise_select">
+                    과학기술/정보통신
+                </button>
+                <button type="button" class="promise_select">
+                    문화/언론/관광/스포츠
+                </button>
+                <button type="button" class="promise_select">
+                    교육/인적자원
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="compare_container">
+            {% for candidate in candidate_list %}
+                    <div>
+                        {% include 'candi_card.html'%}
+                    </div>
+            {% endfor %}
+    </div>
+
+
+
+    <!-- Google Trends -->
+    <div class="trend-container" id="trend">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
+    </div>
+
+
+    <!-- data -->
+    <script>
+        var candidate_json = JSON.stringify('{{ candidate_json }}');
+        var departcon_json = JSON.stringify('{{ departcon_json }}');
+        var depart_json = JSON.stringify('{{ depart_json }}');
+        var names = [];
+    </script>
+
+    <!---google trends--->
+    <script src="/static/js/trend.js"></script>
+    <script src="/static/js/compare.js"></script>
+{% endblock %}
