@@ -1,20 +1,4 @@
-
-:root {
-  --text-color: #4E4E4E;
-  --bg-color: #F5F5F5;
-  --point-color: #CDE82D;
-  --light-color: #C0C0C0;
-  --dark-color: #7A7A7A;
-}
-
-html {
-    font-family: 'Nanum Gothic', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    overflow-wrap: normal;
-}
-
-.select_election{
+.select_election {
     margin:1.5rem 2.5rem;
 }
 

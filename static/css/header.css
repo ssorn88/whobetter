@@ -4,6 +4,10 @@
     margin-left:1.2rem;
 }
 
+.logo {
+    width: 250px;
+}
+
 .menu {
     margin-right: 1rem;
 }
@@ -14,6 +18,19 @@
 
 .header_nav {
     text-align: right;
-    margin-right:2rem;
-    margin-bottom:.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 150px;
+    }
+    .menu {
+    margin-right: 0.5rem;
+    }
+    .header_nav {
+    text-align: right;
+    margin-bottom: 0.2rem;
+    }
 }
