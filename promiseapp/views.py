@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 from django.http import HttpResponseRedirect, HttpResponse
-=======
+
 from django.core import serializers
->>>>>>> develop
+
 from django.shortcuts import render
 from promiseapp.models import DepartCon, Depart, Candidate
 
@@ -17,10 +17,8 @@ def home(request):
 
 class CandidateListView(ListView):
     model = DepartCon
-<<<<<<< HEAD
     context_object_name = 'candidate_list'
     template_name = 'promiseapp/compare.html'
-=======
     context_object_name = "candidate_list"
     template_name = 'promiseapp/compare.html'
 
@@ -41,4 +39,3 @@ class CandidateListView(ListView):
         }
 
         return context
->>>>>>> develop
