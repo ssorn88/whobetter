@@ -1,17 +1,4 @@
-var names = []
-
 function initTrendChart(name) {
-    if ( name == "default" ) {
-        return;
-    }
-
-    if ( names.length >= 4 ) {
-        alert("비교는 4명까지 가능합니다.");
-        return;
-    }
-
-    names.push(name);
-
     var comparisonItem = [];
     var exploreQuery = "date=today%201-m&geo=KR&q=";
 
