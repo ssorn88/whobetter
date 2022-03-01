@@ -2,7 +2,6 @@
     margin:1.5rem 2.5rem;
 }
 
-
 .gray:hover {
     color: var(--dark-color);
 }
@@ -21,6 +20,11 @@
     font-size: 1rem;
     background: var(--light-color);
     color:var(--bg-color);
+}
+
+.congress_button:hover {
+    background: var(--point-color);
+    color: var(--text-color);
 }
 
 .president_button {
@@ -64,8 +68,9 @@
     background: var(--point-color);
     color: var(--text-color);
 }
+
 .trend-container {
-    width: 60%;
+    width: 75%;
     margin: 2rem auto;
 }
 
@@ -110,6 +115,7 @@
   border-style: solid;
   border-width: 5px;        /* 테두리 넓이를 5px 로 설정 */
 }
+
 .tooltip .tooltip-top {
   top: -5px;                /* 영역의 위치를 -5 만큼 위로 이동 */
 }
@@ -124,4 +130,30 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    justify-content: center;
+}
+
+.promise_selected {
+    height: 100px;
+    background: var(--point-color);
+    text-align:center;
+    float: none;
+    margin: 1rem auto;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--text-color);
+}
+
+@media (max-width:768px) {
+    .promise_select{
+        width: 160px;
+    }
+
+    .promise_selected {
+        width: 160px;
+    }
+
 }

@@ -13,7 +13,7 @@ html {
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-wrap: normal;
-    min-width: 600px;
+    min-width: 650px;
     overflow-x: scroll;
 }
 

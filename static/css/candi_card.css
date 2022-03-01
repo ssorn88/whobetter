@@ -90,6 +90,10 @@ ul {
         text-align: center;
     }
 
+    .candi-info .info {
+        padding-left: 0;
+    }
+
     /* 버튼은 그냥 candi-info div 밖으로 빼서 맨 위쪽에 넣고 padding-top 줄이자 ...큐ㅠ 아이콘으로 바꾸고 호버 넣고 */
 
 }
