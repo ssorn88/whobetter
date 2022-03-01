@@ -8,14 +8,14 @@
                 <div class="info">
                     <span class="candi-name"><b>{{ candidate.candi_con.candi_dep.name }}</b></span><br>
                     <span class="candi-party">{{ candidate.candi_con.candi_dep.party }}</span>
-                    <p>{{ candidate.candi_con.candi_dep.slogan }}</p>
+                    <p>{{ candidate.candi_con.candi_dep.slogan  }}</p>
                 </div>
             </div>
-            <button class="dismiss" onclick="">X</button>
+            <button class="dismiss" onclick="dismiss('{{ candidate.candi_con.candi_dep.pk }}')">X</button>
         </div>
         <div class="keywords">
             <ul>
-                {{ candidate.candi_con.candi_dep.keyword }}
+                {{ candidate.candi_con.candi_dep.keyword | linebreaksbr }}
             </ul>
         </div>
     </div>

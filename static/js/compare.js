@@ -13,3 +13,10 @@ function selectCandidate() {
     // 트렌드 전환
     initTrendChart(name);
 }
+
+function dismiss(pk) {
+    document.getElementById(pk).style.display = "none";
+    name = depart_json.filter( function (object) {
+        return object[key] === value;
+    } )
+}
