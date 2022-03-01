@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0;}
+
+:root {
+  --text-color: #4E4E4E;
+  --bg-color: #F5F5F5;
+  --point-color: #CDE82D;
+  --light-color: #C0C0C0;
+  --dark-color: #7A7A7A;
+}
+
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-wrap: normal;
+    min-width: 650px;
+    overflow-x: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    color: var(--light-color);
+    border-color: var(--light-color);
+    background-color: var(--light-color);
+    border-width: 1px 0px 0px 0px;
+    margin: auto 1rem;
+}
+
+select {
+    background: var(--bg-color);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--dark-color);
+}
+
+option {
+    background: var(--bg-color);
+}

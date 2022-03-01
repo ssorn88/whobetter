@@ -1,5 +1,10 @@
 {% load static %}
 
-<div class="header">
-
-</div>
+<div class="header_size">
+        <a href="{% url 'home' %}"><img class="logo" src="{% static 'logo.png' %}" alt="logo" width="250px"></a>
+        <div class="header_nav">
+            <a href="{% url 'home' %}"><span class="menu">Home &nbsp;/</span></a>
+            <a href="{% url 'promiseapp:compare' %}"><span class="menu">Compare &nbsp;/</span></a>
+            <a href="{% url 'home' %}"><span class="menu">Local &nbsp;/</span></a>
+        </div>
+    </div>

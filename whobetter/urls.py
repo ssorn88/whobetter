@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from promiseapp.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('promises/', include('promiseapp.urls')),
+    path('promise/', include('promiseapp.urls')),
+    path('', home, name='home'),
 ]
