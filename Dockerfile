@@ -3,7 +3,6 @@ FROM python:3.9.0
 WORKDIR /home/
 
 RUN echo wb7
->>>>>>> develop
 
 RUN git clone https://github.com/ssorn88/whobetter.git
 
