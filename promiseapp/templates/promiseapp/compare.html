@@ -94,18 +94,8 @@
     </div>
 
     <!-- Google Trends -->
-    <div class="trend-container">
-        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
-        <script type="text/javascript">
-            trends.embed.renderExploreWidget("TIMESERIES",
-            {"comparisonItem":[
-                {"keyword":"이재명","geo":"KR","time":"today 1-m"},
-                {"keyword":"심상정","geo":"KR","time":"today 1-m"},
-                {"keyword":"윤석열","geo":"KR","time":"today 1-m"},
-            ], "category":0, "property":""},
-            {"exploreQuery":"geo=KR&q=%EC%9D%B4%EC%9E%AC%EB%AA%85,%EC%8B%AC%EC%83%81%EC%A0%95&date=today 1-m,today 1-m",
-            "guestPath":"https://trends.google.co.kr:443/trends/embed/"}
-            );
-        </script>
+    <div class="trend-container" id="trend">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js" onload="initTrendChart()"></script>
     </div>
+
 {% endblock %}
