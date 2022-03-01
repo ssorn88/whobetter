@@ -18,8 +18,6 @@ function selectCandidate(value) {
 
     names.push(name);
 
-    console.log(name, pk);
-
     // 트렌드 전환
     initTrendChart();
 
@@ -39,7 +37,7 @@ function dismiss(value) {
         i--;
       }
     }
-
+    console.log(names);
     // 트렌드 전환
     initTrendChart();
 }
