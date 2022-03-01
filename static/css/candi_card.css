@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.candi-container {
+    border: 1px solid var(--light-color);
+    border-radius: 2rem;
+    height: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.candi-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.candi-party {
+    font-size: 0.8rem;
+}
+
+.candi-info .info {
+    padding-left: 1rem;
+}
+
+.candi-info p {
+    margin-top: 1rem;
+}
+
+.image {
+    width: 90px;
+    height: 110px;
+    background-color: var(--light-color);
+}
+
+.dismiss {
+    border: none;
+    background-color: var(--bg-color);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+li {
+    list-style: none;
+    padding-right: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.keyword {
+    padding: 0.2rem;
+}
+
+@media (max-width:768px) {
+    .image {
+        width: 50px;
+        height: 70px;
+        background-color: var(--light-color);
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    .candi-container {
+        padding: 1rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .candi-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .candi-info .info {
+        padding-left: 0;
+    }
+
+    /* 버튼은 그냥 candi-info div 밖으로 빼서 맨 위쪽에 넣고 padding-top 줄이자 ...큐ㅠ 아이콘으로 바꾸고 호버 넣고 */
+
+}

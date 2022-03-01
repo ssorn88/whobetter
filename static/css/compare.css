@@ -1,0 +1,159 @@
+.select_election {
+    margin:1.5rem 2.5rem;
+}
+
+.gray:hover {
+    color: var(--dark-color);
+}
+
+.gray {
+    color: var(--light-color);
+    vertical-align: middle;
+}
+
+.congress_button {
+    margin-right: 1rem;
+    vertical-align: middle;
+    width: 200px;
+    height: 30px;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background: var(--light-color);
+    color:var(--bg-color);
+}
+
+.congress_button:hover {
+    background: var(--point-color);
+    color: var(--text-color);
+}
+
+.president_button {
+    margin-right: 1rem;
+    vertical-align: middle;
+    width: 200px;
+    height: 30px;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background: var(--point-color);
+    color:var(--text-color);
+}
+
+.plus_button{
+    background:var(--point-color)
+    border-radius: 5rem;
+    border-color:var(--text-color);
+
+}
+
+.candidate_combo{
+    margin-right: 1rem;
+    width: 180px;
+}
+
+.promise_select{
+    display:block;
+    text-align:center;
+    float: none;
+    margin: 1rem auto;
+    vertical-align: middle;
+    width: 200px;
+    height: 30px;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background: var(--light-color);
+    color:var(--bg-color);
+}
+
+.promise_select:hover {
+    background: var(--point-color);
+    color: var(--text-color);
+}
+
+.trend-container {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.compare_container {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.candi-two-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.select_title {
+    margin-right: 1rem;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;       /* 이벤트가 없으면 툴팁 영역을 숨김 */
+  width: 120px;             /* 툴팁 영역의 넓이를 설정 */
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  vertical-align: middle;
+  position: absolute;       /* 절대 위치를 사용 */
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;      /* hover 이벤트 발생시 영역을 보여줌 */
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";             /* 정사각형 영역 사용 */
+  position: absolute;       /* 절대 위치 사용 */
+  border-style: solid;
+  border-width: 5px;        /* 테두리 넓이를 5px 로 설정 */
+}
+
+.tooltip .tooltip-top {
+  top: -5px;                /* 영역의 위치를 -5 만큼 위로 이동 */
+}
+
+.tooltip .tooltip-top::after {
+  margin-top: 5px;
+  right: 100%;
+  border-color: transparent var(--text-color) transparent transparent ;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.promise_selected {
+    height: 100px;
+    background: var(--point-color);
+    text-align:center;
+    float: none;
+    margin: 1rem auto;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--text-color);
+}
+
+@media (max-width:768px) {
+    .promise_select{
+        width: 160px;
+    }
+
+    .promise_selected {
+        width: 160px;
+    }
+
+}
