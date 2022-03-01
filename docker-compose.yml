@@ -13,7 +13,7 @@ services:
       - 80:80
 
   django_container_gunicorn:
-    image: django_test_iamge:1
+    image: whobetter_image:1
     networks:
       - network
     volumes:
