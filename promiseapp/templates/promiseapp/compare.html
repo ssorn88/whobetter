@@ -21,17 +21,24 @@
 
     <div class="select_election">
         <span class="select_title">
-            <b>비교 후보자 선택</b>
+            <b>후보자 선택</b>
         </span>
         <span class="selectbox-container">
-            <select class="candidate_combo" name="candidate">
+            <select class="candidate_combo" name="candidate" onchange="initTrendChart(this.value)">
+                <option value="default">검색 빈도 비교할 후보 선택</option>
                 {% for candidate in candidate_list %}
                     <h4>
-                       <option value="candidate">{{ candidate.candi_con.candi_dep.name }}</option>
+                       <option value="{{ candidate.candi_con.candi_dep.name }}">{{ candidate.candi_con.candi_dep.name }}</option>
                     </h4>
                 {% endfor %}
             </select>
         </span>
+    </div>
+
+
+    <!-- Google Trends -->
+    <div class="trend-container" id="trend">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
     </div>
 
     <hr class="gray">
@@ -82,14 +89,4 @@
                     </div>
             {% endfor %}
     </div>
-
-    <!-- Google Trends -->
-    <div class="trend-container" id="trend">
-        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js" onload="initTrendChart()"></script>
-    </div>
-
-    <script>
-
-
-    </script>
 {% endblock %}
