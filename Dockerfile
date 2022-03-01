@@ -2,7 +2,10 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo wb10
+RUN echo wb11
+
+RUN echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'es4402@korea.ac.kr', 'admin')" | python manage.py shell
+
 
 RUN git clone https://github.com/ssorn88/whobetter.git
 
