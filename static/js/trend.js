@@ -1,16 +1,9 @@
-var names = []
+function initTrendChart() {
 
-function initTrendChart(name) {
-    if ( name == "default" ) {
+    if ( names.length == 0 ) {
+        document.getElementById("trend").style.display = 'none';
         return;
     }
-
-    if ( names.length >= 4 ) {
-        alert("비교는 4명까지 가능합니다.");
-        return;
-    }
-
-    names.push(name);
 
     var comparisonItem = [];
     var exploreQuery = "date=today%201-m&geo=KR&q=";
@@ -31,7 +24,6 @@ function initTrendChart(name) {
 
     }
 
-    console.log(exploreQuery);
     document.getElementById("trend").innerHTML = "";
     trends.embed.renderExploreWidgetTo(document.getElementById("trend"), "TIMESERIES", {"comparisonItem":comparisonItem, "category":0,"property":""},{"exploreQuery":exploreQuery,"guestPath":"https://trends.google.co.kr:443/trends/embed/"});
 }

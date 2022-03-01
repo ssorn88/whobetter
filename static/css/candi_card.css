@@ -1,19 +1,17 @@
 .container {
-    display: inline-flex;
     max-width : 100%;
     flex-wrap: wrap;
-    padding: 1rem;
+    display: none;
+    margin: 1rem;
 }
 
 .candi-container {
     border: 1px solid var(--light-color);
     border-radius: 2rem;
     height: 20%;
-    flex-wrap: wrap;
-    min-width: 30rem;
-    max-width: 60rem;
+    width: 20rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
 }

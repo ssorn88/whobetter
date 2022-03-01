@@ -13,7 +13,11 @@ services:
       - 80:80
 
   django_container_gunicorn:
+<<<<<<< HEAD
     image: whobetter_image:5
+=======
+    image: whobetter_image:7
+>>>>>>> develop
     networks:
       - network
     volumes:
