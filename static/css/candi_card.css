@@ -67,3 +67,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.keyword {
+    padding: 0.2rem;
+}

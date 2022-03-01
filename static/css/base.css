@@ -13,7 +13,6 @@ html {
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-wrap: normal;
-    padding: 1rem;
 }
 
 a {
@@ -30,12 +29,7 @@ hr {
     border-color: var(--light-color);
     background-color: var(--light-color);
     border-width: 1px 0px 0px 0px;
-    margin: auto 0.5rem;
-}
-
-.gray {
-    color: var(--light-color);
-    vertical-align: middle;
+    margin: auto 1rem;
 }
 
 select {

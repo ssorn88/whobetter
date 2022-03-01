@@ -18,6 +18,16 @@ html {
     margin:1.5rem 2.5rem;
 }
 
+
+.gray:hover {
+    color: var(--dark-color);
+}
+
+.gray {
+    color: var(--light-color);
+    vertical-align: middle;
+}
+
 .congress_button {
     margin-right: 1rem;
     vertical-align: middle;
