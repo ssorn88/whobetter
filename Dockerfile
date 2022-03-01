@@ -2,9 +2,6 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-<<<<<<< HEAD
-RUN echo wb5
-=======
 RUN echo wb7
 >>>>>>> develop
 
