@@ -80,8 +80,6 @@ venv/
 
 .env
 
-db.sqlite3
-
 .idea
 
 # Byte-compiled / optimized / DLL files
