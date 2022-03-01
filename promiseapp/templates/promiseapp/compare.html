@@ -25,9 +25,11 @@
         </span>
         <span class="selectbox-container">
             <select class="candidate_combo" name="candidate">
-                <option value="none">-------</option>
-                <option value="none">-------</option>
-                <option value="none">-------</option>
+                {% for candidate in candidate_list %}
+                    <h4>
+                       <option value="selected_candidate">{{ candidate.candi_con.candi_dep.name }}</option>
+                    </h4>
+                {% endfor %}
             </select>
         </span>
     </div>
@@ -36,12 +38,11 @@
 
     <div class="compare_container">
         <div>
-            <div class="candi-two-container">
-                {% include 'candi_card.html' %}
-            </div>
-            <div class="candi-two-container">
-                {% include 'candi_card.html' %}
-            </div>
+            {% for candidate in candidate_list %}
+                <div class="candi-two-container">
+                    {% include 'candi_card.html' with candidate=candidate %}
+                </div>
+            {% endfor %}
         </div>
 
         <div class="category-container">

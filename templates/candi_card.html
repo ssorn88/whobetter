@@ -10,25 +10,16 @@
             </div>
             <div>
                 <div class="info">
-                    <span class="candi-name"><b>이름이름</b></span><br>
-                    <span class="candi-party">정당정당</span>
-                    <p>공약 슬로건 해시택 노엘을 국회로 해시택 노엘을 국회로 ~~</p>
+                    <span class="candi-name"><b>{{ candidate.candi_con.candi_dep.name }}</b></span><br>
+                    <span class="candi-party">{{ candidate.candi_con.candi_dep.party }}</span>
+                    <p>{{ candidate.candi_con.candi_dep.slogan }}</p>
                 </div>
             </div>
             <button class="dismiss" onclick="">X</button>
         </div>
         <div class="keywords">
             <ul>
-                <a><li>공약1어쩌고저쩌고</li></a>
-                <a><li>공약2어쩌고저쩌고</li></a>
-                <a><li>공약3어쩌고저쩌고</li></a>
-                <a><li>공약4어쩌고저쩌고</li></a>
-                <a><li>공약5어쩌고저쩌고</li></a>
-                <a><li>공약1어쩌고저쩌고</li></a>
-                <a><li>공약2어쩌고저쩌고</li></a>
-                <a><li>공약3어쩌고저쩌고</li></a>
-                <a><li>공약4어쩌고저쩌고</li></a>
-                <a><li>공약5어쩌고저쩌고</li></a>
+                {{ candidate.candi_con.candi_dep.keyword }}
             </ul>
         </div>
     </div>
