@@ -3,11 +3,9 @@
 
 
 {% block content %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'compare.css' %}">
     <div class="select_election">
-        <span style="margin-right:2rem;">
-            선거 선택
+        <span class="select_title">
+            <b>선거 선택</b>
         </span>
         <button type="button" class="congress_button">
             제21대 국회의원선거
@@ -15,61 +13,99 @@
         <button type="button" class="president_button">
             제20대 대통령선거
         </button>
-        <button type="button" class="plus_button">
-            +
+        <button type="button" class="plus_button tooltip">
+            <span class="material-icons gray"> add_circle </span>
+            <span class="tooltiptext tooltip-top">이전 선거 확인하기</span>
         </button>
-        <br><br>
-        <span style="margin-top:2rem;" >
-            <a style="margin-right:1rem;">
-            비교 후보자 선택
-            </a>
+    </div>
+
+    <div class="select_election">
+        <span class="select_title">
+            <b>비교 후보자 선택</b>
+        </span>
+        <span class="selectbox-container">
             <select class="candidate_combo" name="candidate">
-                <option value="none">
-                    --------
-                </option>
+                <option value="none">-------</option>
+                <option value="none">-------</option>
+                <option value="none">-------</option>
             </select>
-            <button type="button" class="plus_button">
-                +
-            </button>
         </span>
     </div>
 
-    <div>
-        <button type="button" class="promise_select">
-            코로나
-        </button>
-        <button type="button" class="promise_select">
-            부동산
-        </button>
-        <button type="button" class="promise_select">
-            국방/통일/외교통상
-        </button>
-        <button type="button" class="promise_select">
-            정치/행정/사법
-        </button>
-        <button type="button" class="promise_select">
-            재정/경제/복지
-        </button>
-        </button>
-        <button type="button" class="promise_select">
-            산업자원/건설교통
-        </button>
-        </button>
-        <button type="button" class="promise_select">
-            보건의료/환경
-        </button>
-        </button>
-        <button type="button" class="promise_select">
-            과학기술/정보통신
-        </button>
-        </button>
-        <button type="button" class="promise_select">
-            문화/언론/관광/스포츠
-        </button>
-        <button type="button" class="promise_select">
-            교육/인적자원
-        </button>
+    <hr class="gray">
+
+    <div class="compare_container">
+        <div>
+            <div class="candi-two-container">
+                {% include 'candi_card.html' %}
+            </div>
+            <div class="candi-two-container">
+                {% include 'candi_card.html' %}
+            </div>
+        </div>
+
+        <div class="category-container">
+            <button type="button" class="promise_select">
+                코로나
+            </button>
+            <button type="button" class="promise_select">
+                부동산
+            </button>
+            <button type="button" class="promise_select">
+                국방/통일/외교통상
+            </button>
+            <button type="button" class="promise_select">
+                정치/행정/사법
+            </button>
+            <button type="button" class="promise_select">
+                재정/경제/복지
+            </button>
+
+            <button type="button" class="promise_selected">
+                주요 공약
+            </button>
+
+            <button type="button" class="promise_select">
+                산업자원/건설교통
+            </button>
+            <button type="button" class="promise_select">
+                보건의료/환경
+            </button>
+            <button type="button" class="promise_select">
+                과학기술/정보통신
+            </button>
+            <button type="button" class="promise_select">
+                문화/언론/관광/스포츠
+            </button>
+            <button type="button" class="promise_select">
+                교육/인적자원
+            </button>
+        </div>
+
+        <div>
+            <div class="candi-two-container">
+                {% include 'candi_card.html' %}
+            </div>
+            <div class="candi-two-container">
+                {% include 'candi_card.html' %}
+            </div>
+        </div>
 
     </div>
 
+    <!-- Google Trends -->
+    <div class="trend-container">
+        <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2884_RC01/embed_loader.js"></script>
+        <script type="text/javascript">
+            trends.embed.renderExploreWidget("TIMESERIES",
+            {"comparisonItem":[
+                {"keyword":"이재명","geo":"KR","time":"today 1-m"},
+                {"keyword":"심상정","geo":"KR","time":"today 1-m"},
+                {"keyword":"윤석열","geo":"KR","time":"today 1-m"},
+            ], "category":0, "property":""},
+            {"exploreQuery":"geo=KR&q=%EC%9D%B4%EC%9E%AC%EB%AA%85,%EC%8B%AC%EC%83%81%EC%A0%95&date=today 1-m,today 1-m",
+            "guestPath":"https://trends.google.co.kr:443/trends/embed/"}
+            );
+        </script>
+    </div>
 {% endblock %}

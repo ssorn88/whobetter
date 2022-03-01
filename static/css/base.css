@@ -13,6 +13,8 @@ html {
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-wrap: normal;
+    min-width: 650px;
+    overflow-x: scroll;
 }
 
 a {
@@ -29,5 +31,16 @@ hr {
     border-color: var(--light-color);
     background-color: var(--light-color);
     border-width: 1px 0px 0px 0px;
-    margin: auto 0.5rem;
+    margin: auto 1rem;
+}
+
+select {
+    background: var(--bg-color);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--dark-color);
+}
+
+option {
+    background: var(--bg-color);
 }
