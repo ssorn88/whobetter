@@ -4,12 +4,12 @@ WORKDIR /home/
 
 RUN echo wb11
 
-RUN echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'es4402@korea.ac.kr', 'admin')" | python manage.py shell
-
 
 RUN git clone https://github.com/ssorn88/whobetter.git
 
 WORKDIR /home/whobetter/
+
+
 
 RUN python -m pip install --upgrade pip
 
@@ -18,6 +18,9 @@ RUN pip install -r requirements.txt
 RUN pip install gunicorn
 
 RUN pip install mysqlclient
+
+RUN echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'es4402@korea.ac.kr', 'admin')" | python manage.py shell
+
 
 EXPOSE 8000
 
