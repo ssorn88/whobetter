@@ -1,9 +1,9 @@
 from django.urls import path
 
-from promiseapp.views import compare
+from promiseapp.views import CandidateListView
 
 app_name = "promiseapp"
 
 urlpatterns = [
-    path('compare/', compare, name='compare')
+    path('compare/', CandidateListView.as_view(), name='compare')
 ]
