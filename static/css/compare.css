@@ -62,11 +62,22 @@
     font-size: 1rem;
     background: var(--light-color);
     color:var(--bg-color);
+    transition: all ease 1s 0s;
 }
 
 .promise_select:hover {
+    height: 100px;
     background: var(--point-color);
-    color: var(--text-color);
+    text-align:center;
+    float: none;
+    margin: 1rem auto;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--text-color);
+    transition: all ease 1s 0s;
 }
 
 .trend-container {
@@ -145,6 +156,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color:var(--text-color);
+    transition: all ease 1s 0s;
 }
 
 @media (max-width:768px) {
