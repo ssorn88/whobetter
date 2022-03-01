@@ -14,7 +14,7 @@ services:
 
   django_container_gunicorn:
 
-    image: whobetter_image:7
+    image: whobetter_image:8
 
     networks:
       - network
