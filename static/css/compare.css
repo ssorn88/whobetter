@@ -80,18 +80,6 @@
     transition: all ease 1s 0s;
 }
 
-.promise_select:hover ~ .promise_selected {
-    margin: 1rem auto;
-    vertical-align: middle;
-    width: 200px;
-    height: 30px;
-    border-radius: 5rem;
-    font-size: 1rem;
-    background: var(--light-color);
-    color:var(--bg-color);
-    transition: all ease 1s 0s;
-}
-
 .trend-container {
     width: 75%;
     margin: 2rem auto;
