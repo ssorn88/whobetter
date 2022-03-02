@@ -9,4 +9,4 @@ app_name = "promiseapp"
 urlpatterns = [
     path('main/', home, name='main'),
     path('compare/', CandidateListView.as_view(), name='compare')
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
